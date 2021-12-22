@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
 project(zebra_scanner_example LANGUAGES CXX)
-
 set(BINARY_NAME "zebra_scanner_example")
 
 cmake_policy(SET CMP0063 NEW)
