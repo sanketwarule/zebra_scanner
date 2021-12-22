@@ -1,0 +1,4 @@
+<resources>
+    <string name="get_bt_address_instruction1">Enter bluetooth address of scanner device</string>
+    <string name="OK">OK</string>
+</resources>
