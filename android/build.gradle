@@ -35,8 +35,8 @@ android {
 }
 
 dependencies {
-//    implementation project(path: ':BarcodeScannerLibrary')
-    compileOnly files('D:/StudioProjects/CloudClient/android/app/libs/barcode_scanner_library.aar')
+    api project(path: ':BarcodeScannerLibrary')
+//    compileOnly files('D:/StudioProjects/CloudClient/android/app/libs/barcode_scanner_library.aar')
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
