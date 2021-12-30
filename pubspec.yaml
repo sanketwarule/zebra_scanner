@@ -1,7 +1,6 @@
 name: zebra_scanner
 description: A new Flutter project.
 version: 0.0.1
-author: sanket warule <warulesanket@gmail.com>
 homepage: https://github.com/sanketwarule/zebra_scanner.git
 
 environment:
@@ -33,8 +32,8 @@ flutter:
         pluginClass: ZebraScannerPlugin
       ios:
         pluginClass: ZebraScannerPlugin
-#      windows:
-#        pluginClass: ZebraScannerPlugin
+      windows:
+        pluginClass: ZebraScannerPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

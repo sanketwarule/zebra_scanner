@@ -55,8 +55,8 @@ flutter {
 }
 
 dependencies {
-    implementation project(path: ':BarcodeScannerLibrary')
-    implementation 'androidx.appcompat:appcompat:1.4.0'
-    implementation 'com.google.code.gson:gson:2.8.9'
+//    api project(path: ':BarcodeScannerLibrary')
+//    implementation 'androidx.appcompat:appcompat:1.4.0'
+//    implementation 'com.google.code.gson:gson:2.8.9'
 
 }
