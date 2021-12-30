@@ -18,26 +18,26 @@ samples, guidance on mobile development, and a full API reference.
 # First
 Run this command:
 ```bash
-flutter pub add honeywell_scanner
+flutter pub add zebra_scanner
 ```
-This will add `honeywell_scanner` to your pubspec.yaml dependencies like:
+This will add `zebra_scanner` to your pubspec.yaml dependencies like:
 ```yaml
-honeywell_scanner: ^latest_version
+zebra_scanner: ^latest_version
 ```
 Then run `flutter pub get` to download the library sources to your pub-cache.
 
 # Second
-Copy the **honeywell** folder which is inside the example code sources at:
+Copy the **BarcodeScannerLibrary** folder which is inside the example code sources at:
 
-`.../.pub-cache/hosted/pub.dartlang.org/honeywell_scanner-x.x.x+x/example/android/honeywell`
+`.../.pub-cache/hosted/pub.dartlang.org/zebra_scanner-x.x.x+x/example/android/zebra_scanner`
 
-into your android project module which is going to use this plugin. This step is necessary and crucial because the Honeywell Data Collection Android library is a bundle .aar which has to be referenced as a project library.
+into your android project module which is going to use this plugin. This step is necessary and crucial because the BarcodeScannerLibrary Data Collection Android library is a bundle .aar which has to be referenced as a project library.
 
 
 # Third
-Add this `include ':honeywell'` to your `settings.gradle` in your android project module to allow the plugin to locate the honeywell.aar library.
+Add this `include ':BarcodeScannerLibrary'` to your `settings.gradle` in your android project module to allow the plugin to locate the barcode_scanner_library.aar library.
 
 
 # Fourth
 
-Add `tools:replace="android:label"` under `application` tag in your **AndroidManifest.xml**, this is required because the **honeywell.aar** library defines an `android:label="@string/app_name"` which conflicts with your project's label resulting in a *Manifest merger failed* error
+Add `tools:replace="android:label"` under `application` tag in your **AndroidManifest.xml**, this is required because the **barcode_scanner_library.aar** library defines an `android:label="@string/app_name"` which conflicts with your project's label resulting in a *Manifest merger failed* error
