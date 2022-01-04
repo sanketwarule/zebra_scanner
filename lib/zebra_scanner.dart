@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 import 'barcode.dart';
 
-class ZebraScanner {
+class ZebraScannerPlugin {
   static const MethodChannel _channel = MethodChannel('zebra_scanner_plugin');
   static const EventChannel _eventChannel = EventChannel('barcode_stream');
   static Future<String?> get platformVersion async {

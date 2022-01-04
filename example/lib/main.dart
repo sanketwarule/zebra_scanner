@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
               PopupMenuItem(
                 child: const Text("Scan and connect"),
                 onTap: () async{
-                  await ZebraScanner.connectToScanner;
+                  await ZebraScannerPlugin.connectToScanner;
                   },
                 value: 1,
               ),
@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
           ],
         ),
         body: StreamBuilder<String>(
-          stream: ZebraScanner.barcodeStream,
+          stream: ZebraScannerPlugin.barcodeStream,
           builder: (context, snapshot) {
             String? data;
             if (snapshot.hasData) {
