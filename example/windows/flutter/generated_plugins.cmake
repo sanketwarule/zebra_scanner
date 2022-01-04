@@ -3,6 +3,7 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  zebra_scanner
 )
 
 set(PLUGIN_BUNDLED_LIBRARIES)

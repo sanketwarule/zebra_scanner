@@ -1,0 +1,1 @@
+export 'src/zebra_scanner.dart';
